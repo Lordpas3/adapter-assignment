@@ -10,6 +10,7 @@ public class Main {
 
         ConsoleReader reader = new ConsoleReader();
         ConsoleWriter writer = new ConsoleWriter();
+        Adapter adapter = new Adapter();
 
         // ask questions
         String q1 = "Do you like eating vegetables?";
@@ -20,8 +21,9 @@ public class Main {
         // ask question to user
         writer.write(q1);
 
-        // read response
-        Boolean ans1 = reader.readLine().equals("Yep");
+        // read adapter response
+        adapter.readLine();
+        Boolean ans1 = adapter.check();
 
         //TODO
         // the reader should accept the following values as true:
